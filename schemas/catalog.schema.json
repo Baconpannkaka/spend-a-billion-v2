@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Spend Anything product catalog",
+  "type": "object",
+  "required": ["version", "mode", "productCount", "categories", "products"],
+  "properties": {
+    "version": { "type": "integer", "minimum": 1 },
+    "mode": { "enum": ["luxury", "everyday"] },
+    "productCount": { "const": 10000 },
+    "categories": { "type": "array", "minItems": 15 },
+    "products": {
+      "type": "array",
+      "minItems": 10000,
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "required": ["id", "mode", "name", "categoryId", "subcategoryId", "priceSek", "tags"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(lux|everyday)-[0-9]{6}$" },
+          "mode": { "enum": ["luxury", "everyday"] },
+          "name": { "type": "string", "minLength": 1 },
+          "priceSek": { "type": "number", "exclusiveMinimum": 0 }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+SPEND A BILLION – UX-, SPRÅK- OCH ANNONSUPPDATERING
+
+Rekommenderat för test:
+1. Skapa ett nytt publikt GitHub-repository, exempelvis spend-a-billion-v2-1-test.
+2. Packa upp zip-filen.
+3. Ladda upp ALLT INNE I projektmappen direkt till repositoryts rot.
+4. Kontrollera att package.json, package-lock.json, src och public syns direkt under Code.
+5. Välj Settings > Pages > GitHub Actions.
+6. Bygget startar automatiskt.
+
+Uppdatera befintligt repository:
+- Ladda upp allt innehåll direkt till roten och ersätt filer med samma namn.
+- Den här uppdateringen kräver inte att några nuvarande v2-filer raderas.
+- Kontrollera Actions efter uppladdningen.
+
+Reklam är avstängd. Aktivering beskrivs i README.md och src/config/ads.ts.

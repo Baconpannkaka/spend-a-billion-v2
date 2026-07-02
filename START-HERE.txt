@@ -1,0 +1,9 @@
+SPEND A BILLION – GITHUB PAGES
+
+1. Packa upp zip-filen.
+2. Ladda upp ALLT INNE I MAPPEN direkt i repositoryts huvudnivå.
+3. Kontrollera att package.json, package-lock.json, src, public och .github syns direkt under Code.
+4. Gå till Settings → Pages och välj GitHub Actions.
+5. Öppna Actions och vänta tills både build och deploy är gröna.
+
+Projektet innehåller två kataloger med 10 000 produkter vardera. GitHub-bygget kan därför ta några minuter och den färdiga zip-filen är större än tidigare version.
